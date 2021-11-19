@@ -21,4 +21,6 @@ import testapp.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('testapp/get_example/<arg>', testapp.views.get_example),
+    path('testapp/gallery', testapp.views.gallery),
+    path('testapp/gallery/<photo>', testapp.views.gallery_photo),
 ]

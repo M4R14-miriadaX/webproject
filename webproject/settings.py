@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'testapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -120,6 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static_root'
+STATICFILES_DIRS = ['static']
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media_root'
 
